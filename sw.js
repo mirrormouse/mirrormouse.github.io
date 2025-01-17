@@ -1,6 +1,6 @@
 // sw.js
 
-const CACHE_VERSION = 'v2'; // バージョン番号を更新
+const CACHE_VERSION = 'v3.0.4'; // バージョン番号を更新
 const CACHE_NAME = `site-card-links-cache-${CACHE_VERSION}`;
 const urlsToCache = [
     '/',

@@ -77,9 +77,20 @@ main {
 }
 
 .card.google .card-icon img {
-    background-color: #4285F4;
+    background-color: #42f471;
     /* Googleアイコンの背景色を変更 */
 }
+
+.card.self .card-icon i {
+    color: #8948b8;
+    /* Googleアイコンの背景色を変更 */
+}
+
+.card.game .card-icon i {
+    color: #41b31b;
+    /* Googleアイコンの背景色を変更 */
+}
+
 
 /* コンテンツのスタイル */
 .card-content {
