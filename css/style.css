@@ -91,6 +91,11 @@ main {
     /* Googleアイコンの背景色を変更 */
 }
 
+.card.paper .card-icon i {
+    color: #b3791b;
+    /* Googleアイコンの背景色を変更 */
+}
+
 
 /* コンテンツのスタイル */
 .card-content {
