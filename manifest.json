@@ -1,0 +1,21 @@
+{
+    "name": "サイトカードリンク",
+    "short_name": "カードリンク",
+    "description": "お気に入りサイトへのリンクをカード形式で表示するPWA",
+    "icons": [
+        {
+            "src": "assets/images/favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/favicon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#4CAF50",
+    "background_color": "#ffffff"
+}
