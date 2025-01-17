@@ -111,7 +111,7 @@ main {
     color: #666;
 }
 
-/* リンクアイコンのスタイル */
+/* リンクアイコンのスタイル 拡大*/
 .card-link {
     position: absolute;
     top: 10px;
@@ -120,6 +120,10 @@ main {
     font-size: 1.2em;
     text-decoration: none;
     transition: color 0.2s;
+    /* 追加 */
+    padding: 40px;
+    border-radius: 20%;
+    /* 必要に応じて丸くする */
 }
 
 .card-link:hover {
@@ -133,15 +137,16 @@ footer {
     padding: 10px 0;
 }
 
+
 /* キャッシュクリアボタンのスタイル */
 #clear-cache-button {
-    background-color: #ffff82;
+    background-color: #889fce;
     /* ボタンの背景色 */
     color: #000000;
     /* テキストの色 */
     border: none;
     /* ボーダーをなしに */
-    padding: 10px 20px;
+    padding: 7px 10px;
     /* 内側の余白 */
     font-size: 1em;
     /* フォントサイズ */
@@ -153,4 +158,42 @@ footer {
     /* トランジション効果 */
     margin-top: 10px;
     /* 上部の余白 */
+}
+
+/* ボタンのホバー時のスタイル */
+#clear-cache-button:hover {
+    background-color: #7d98d0;
+    /* ホバー時の背景色 */
+    transform: scale(1.05);
+    /* 少し拡大 */
+}
+
+/* ボタンのアクティブ時のスタイル */
+#clear-cache-button:active {
+    background-color: #6285cb;
+    /* アクティブ時の背景色 */
+    transform: scale(0.98);
+    /* 少し縮小 */
+}
+
+/* ヘッダー内のボタン配置調整 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* レスポンシブデザイン: スクリーン幅が600px以上の場合、ボタンをヘッダー内の右上に配置 */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    #clear-cache-button {
+        margin-top: 0;
+    }
 }
